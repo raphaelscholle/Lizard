@@ -34,7 +34,7 @@ jobs:
       - name: Download Source
         run: |
           ls -a
-          wget https://fra1.digitaloceanspaces.com/openhd-images/Downloader/tina.tar.gz
+          wget -nv https://fra1.digitaloceanspaces.com/openhd-images/Downloader/tina.tar.gz
           tar zx tina.tar.gz
           ls -a
 
