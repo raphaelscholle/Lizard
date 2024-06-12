@@ -35,7 +35,7 @@ jobs:
         run: |
           ls -a
           wget -nv https://fra1.digitaloceanspaces.com/openhd-images/Downloader/tina.tar.gz
-          tar zx tina.tar.gz
+          cat tina.tar.gz | tar zx
           ls -a
 
   
