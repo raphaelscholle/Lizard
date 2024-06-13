@@ -1,0 +1,168 @@
+diff --git a/cmake/FindPNG.cmake b/cmake/FindPNG.cmake
+index 388f1d9..f67243c 100644
+--- a/cmake/FindPNG.cmake
++++ b/cmake/FindPNG.cmake
+@@ -13,7 +13,7 @@ if (ZLIB_FOUND)
+ set (PNG_HEADS png.h)
+ find_path (PNG_INCLUDE_DIR ${PNG_HEADS})
+ 
+-set (PNG_NAMES png libpng png12 libpng12)
++set (PNG_NAMES png libpng png16 libpng16)
+ find_library (PNG_LIBRARY NAMES ${PNG_NAMES})
+ 
+ # just find one of dependency, guess other one.
+diff --git a/configure.ac b/configure.ac
+index 5641d80..4d7be23 100644
+--- a/configure.ac
++++ b/configure.ac
+@@ -1374,7 +1374,7 @@ fi
+ 
+ dnl Check for PNG library.
+ if test "x$build_png_support" != "xno"; then
+-    AC_CHECK_LIB(png, png_check_sig,
++    AC_CHECK_LIB(png, png_sig_cmp,
+         DEP_LIBS="$DEP_LIBS -lpng",
+         build_png_support=no, -lz -lm)
+ fi
+@@ -2019,7 +2019,7 @@ dnl Check for FreeType1 library
+   ft2)
+ dnl Check for FreeType2 library
+     AC_CHECK_LIB(freetype, FT_Library_Version,
+-        DEP_LIBS="$DEP_LIBS -lfreetype -lz -lpng12",
++        DEP_LIBS="$DEP_LIBS -lfreetype -lz -lpng16",
+         use_ttf_lib="none")
+     ;;
+ esac
+diff --git a/src/mybmp/png.c b/src/mybmp/png.c
+index 09d2dde..b081f7c 100644
+--- a/src/mybmp/png.c
++++ b/src/mybmp/png.c
+@@ -56,6 +56,7 @@
+ typedef struct {
+     png_structp png_ptr;
+     png_infop info_ptr;
++    BOOL      interlaced;
+ } png_init_info_t;
+ 
+ 
+@@ -66,8 +67,9 @@ static void my_read_data_fn (png_structp png_ptr, png_bytep data,
+                 png_size_t length)
+ {
+    png_size_t check;
++   png_voidp io_ptr = png_get_io_ptr(png_ptr);
+ 
+-   check = (png_size_t)MGUI_RWread ((MG_RWops*)png_ptr->io_ptr, 
++   check = (png_size_t)MGUI_RWread ((MG_RWops*)io_ptr,
+                    data, (png_size_t)1, length);
+ 
+    if (check != length)
+@@ -81,7 +83,7 @@ static void my_read_data_fn (png_structp png_ptr, png_bytep data,
+ #define _PNG_INIT_OK    0
+ 
+ static int readpng_init (png_structpp png_pptr, png_infopp info_pptr, 
+-                MG_RWops* src, ulg* width, ulg* height, 
++                MG_RWops* src, png_uint_32* width, png_uint_32* height,
+                 int* bitdepth, int* colortype)
+ {
+     uch sig[9];
+@@ -113,7 +115,7 @@ static int readpng_init (png_structpp png_pptr, png_infopp info_pptr,
+     }
+ 
+ #ifdef PNG_SETJMP_SUPPORTED
+-    if (setjmp ((*png_pptr)->jmpbuf)) {
++    if (setjmp(png_jmpbuf(*png_pptr))) {
+         png_destroy_read_struct (png_pptr, info_pptr, NULL);
+         return _PNG_LIB_ERROR;
+     }
+@@ -181,8 +183,8 @@ void * __mg_init_png(MG_RWops * fp, MYBITMAP * mybmp, RGB * pal)
+     int rc;
+     png_structpp png_ptr;
+     png_infopp info_ptr;
+-    ulg width;
+-    ulg height;
++    png_uint_32 width;
++    png_uint_32 height;
+     int bit_depth, intent, color_type;
+     double screen_gamma;
+     png_init_info_t * png_data = NULL;
+@@ -221,18 +223,21 @@ void * __mg_init_png(MG_RWops * fp, MYBITMAP * mybmp, RGB * pal)
+         png_set_packing(*png_ptr);
+ 
+     /* Expand grayscale images to the full 8 bits from 1, 2, or 4 bits/pixel */
+-	if (color_type == PNG_COLOR_TYPE_GRAY && bit_depth < 8) {
++   if ((color_type == PNG_COLOR_TYPE_GRAY
++            || color_type == PNG_COLOR_TYPE_GRAY_ALPHA)
++            && bit_depth < 8) {
+ #ifdef WIN32
+         assert(0); /* XXX: */
+ #else
+-        png_set_gray_1_2_4_to_8(*png_ptr);
++        png_set_expand_gray_1_2_4_to_8(*png_ptr);
+ #endif
+ 	}
+ 
+     /* Expand paletted colors into true RGB triplets */
+     if (color_type == PNG_COLOR_TYPE_PALETTE)
+         png_set_palette_to_rgb(*png_ptr);
+-    else if (color_type == PNG_COLOR_TYPE_GRAY)
++    else if (color_type == PNG_COLOR_TYPE_GRAY
++            || color_type == PNG_COLOR_TYPE_GRAY_ALPHA)
+         png_set_gray_to_rgb(*png_ptr);
+ 
+     if (png_get_valid(*png_ptr, *info_ptr, PNG_INFO_tRNS)) {
+@@ -265,7 +270,8 @@ void * __mg_init_png(MG_RWops * fp, MYBITMAP * mybmp, RGB * pal)
+     }
+ 
+     png_read_update_info (*png_ptr, *info_ptr);
+-    mybmp->depth = (*info_ptr)->pixel_depth;
++    mybmp->depth = png_get_bit_depth (*png_ptr, *info_ptr);
++    mybmp->depth *= png_get_channels (*png_ptr, *info_ptr);
+     if (mybmp->depth == 24)
+         mybmp->flags |= MYBMP_RGBSIZE_3;
+     else
+@@ -273,6 +279,11 @@ void * __mg_init_png(MG_RWops * fp, MYBITMAP * mybmp, RGB * pal)
+     
+     mybmp->pitch = png_get_rowbytes (*png_ptr, *info_ptr);
+ 
++    if (png_get_interlace_type(*png_ptr, *info_ptr) == PNG_INTERLACE_ADAM7)
++        png_data->interlaced = TRUE;
++	else
++        png_data->interlaced = FALSE;
++
+     return png_data;
+ 
+ err:
+@@ -310,10 +321,10 @@ int __mg_load_png (MG_RWops * fp, void * init_info, MYBITMAP * my_bmp,
+     else
+         p = my_bmp->pitch;
+ 
+-    image_height = info->png_ptr->height;
+-    info->png_ptr->num_rows = image_height;
++    image_height = png_get_image_height(info->png_ptr, info->info_ptr);
++    //info->png_ptr->num_rows = image_height;
+ 
+-    if (info->png_ptr->interlaced) {
++    if (info->interlaced) {
+         bits = (png_bytep)malloc(my_bmp->pitch * image_height);
+         if (!bits)
+             return ERR_BMP_MEM;
+@@ -321,8 +332,8 @@ int __mg_load_png (MG_RWops * fp, void * init_info, MYBITMAP * my_bmp,
+     }
+ 
+ #ifdef PNG_SETJMP_SUPPORTED
+-    if (setjmp (info->png_ptr->jmpbuf)) {
+-        if (info->png_ptr->interlaced) {
++    if (setjmp(png_jmpbuf (info->png_ptr))) {
++        if (info->interlaced) {
+             free (bits);
+         }
+         return ERR_BMP_LOAD;
+@@ -339,7 +350,7 @@ int __mg_load_png (MG_RWops * fp, void * init_info, MYBITMAP * my_bmp,
+ 
+     png_read_end(info->png_ptr, NULL);
+ 
+-    if (info->png_ptr->interlaced) {
++    if (info->interlaced) {
+         rp = (png_bytep)my_bmp->bits;
+         my_bmp->bits = (BYTE *)bits;
+         if (cb) for (i = 0; i < image_height; i++, my_bmp->bits += p)

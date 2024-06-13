@@ -1,0 +1,13 @@
+diff --git a/src/scene3d.c b/src/scene3d.c
+index 65f6dd4..cbabc82 100644
+--- a/src/scene3d.c
++++ b/src/scene3d.c
+@@ -60,7 +60,7 @@ static HDC hSceneMemDC; /* == scene_bmp */
+ static int scene_alpha;
+ static int last_x, scene_y;
+ static float last_z;
+-typedef unsigned int uintptr_t;
++/*typedef unsigned int uintptr_t;*/
+ static uintptr_t scene_addr;
+ static MG3D_COLOR_MAP *scene_cmap;
+ static float scene_gap = 100.0;
