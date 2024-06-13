@@ -1,0 +1,17 @@
+config BR2_PACKAGE_ADBD
+	bool "adbd"
+	help
+	  adbd is Android Debug Bridge Daemon in Tina Linux.
+
+if BR2_PACKAGE_ADBD
+config BR2_PACKAGE_ADBD_AUTH
+	bool "adbd_auth_service"
+	select BR2_PACKAGE_LIBAWADBAUTH
+	help
+	  adb auth service for Tina Linux
+
+config BR2_PACKAGE_LIBAWADBAUTH
+	bool "libawadbauth"
+	help
+	  adb auth lib for Tina Linux
+endif

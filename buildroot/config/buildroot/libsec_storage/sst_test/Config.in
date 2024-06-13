@@ -1,0 +1,5 @@
+config BR2_PACKAGE_SST_TEST
+	bool "SST_TEST"
+	help
+	  secure storage test
+

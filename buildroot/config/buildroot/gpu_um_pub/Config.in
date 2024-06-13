@@ -1,0 +1,5 @@
+config BR2_PACKAGE_SUNXI_GPU
+	bool "Support SUNXI GPU"
+	help
+	  Support SUNXI GPU
+

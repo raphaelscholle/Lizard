@@ -1,0 +1,4 @@
+config BR2_PACKAGE_LIBSST
+	bool "libsst"
+	help
+	  secure storage

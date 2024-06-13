@@ -1,0 +1,3 @@
+# wifi-manager
+source "../config/buildroot/allwinner/wireless/wifi-manager/libwifimg/Config.in"
+source "../config/buildroot/allwinner/wireless/wifi-manager/wifi-manager-demo/Config.in"

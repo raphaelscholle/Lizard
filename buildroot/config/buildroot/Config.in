@@ -1,0 +1,26 @@
+menu "allwinner platform private package select"
+
+menu "power"
+
+endmenu
+
+menu "system"
+source "../config/buildroot/allwinner/system/ota-burnboot/Config.in"
+endmenu
+
+menu "usb"
+source "../config/buildroot/allwinner/usb/mtp/Config.in"
+source "../config/buildroot/allwinner/usb/adbd/Config.in"
+endmenu
+
+menu "utils"
+source "../config/buildroot/allwinner/utils/boot-play/Config.in"
+source "../config/buildroot/allwinner/utils/cpu_monitor/Config.in"
+source "../config/buildroot/allwinner/utils/mtop/Config.in"
+endmenu
+
+menu "wireless"
+source "../config/buildroot/allwinner/wireless/wifi-manager/Config.in"
+endmenu
+
+endmenu

@@ -1,0 +1,14 @@
+menu "wifi"
+config BR2_PACKAGE_WIFI_FIRMWARE
+	bool "wifi firmware"
+	help
+	  copy wifi firmware to rootfs
+
+config BR2_PACKAGE_WIFI_NAME
+	string "xr819"
+	default ""
+	depends on BR2_PACKAGE_WIFI_FIRMWARE
+	help
+		"Bass on BR2_PACKAGE_WIFI_NAME, copy "xxx wifi firmware to rootfs"
+
+endmenu

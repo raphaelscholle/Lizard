@@ -1,0 +1,5 @@
+config BR2_PACKAGE_CPU_MONITOR
+	bool "cpu_monitor"
+	help
+	  mtop for test
+

@@ -1,0 +1,2 @@
+source "../config/buildroot/libsec_storage/libsst/Config.in"
+source "../config/buildroot/libsec_storage/sst_test/Config.in"

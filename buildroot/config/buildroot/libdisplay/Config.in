@@ -1,0 +1,4 @@
+config BR2_PACKAGE_LIBDISPLAY
+	bool "sunxi libdisplay"
+	help
+	  sunxi libdisplay

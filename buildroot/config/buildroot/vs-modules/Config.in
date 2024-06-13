@@ -1,0 +1,5 @@
+config BR2_PACKAGE_VS_MODULES
+	bool "vs modules"
+	help
+	  vs modules: platorm/vendor/vs
+
