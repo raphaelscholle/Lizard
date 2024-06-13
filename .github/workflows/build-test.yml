@@ -34,8 +34,15 @@ jobs:
       - name: Download Source
         run: |
           ls -a
-          wget -nv https://fra1.digitaloceanspaces.com/openhd-images/Downloader/tina.tar.gz
-          cat tina.tar.gz | tar zx
-          ls -a
+          cd ..
+          ls
+          wget https://fra1.digitaloceanspaces.com/openhd-images/Downloader/BIGFILES.7z
+          7z x BIGFILES.7z -oLizard -bb1
+          ls 
+          cd Lizard
+
+
+
+
 
   
