@@ -38,7 +38,7 @@ jobs:
           cd Lizard
           ls -a
           sudo apt-get install -y  libncurses5-dev   u-boot-tools
-  	      source build/envsetup.sh 
+          source build/envsetup.sh 
           lunch
 
 
