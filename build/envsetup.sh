@@ -38,6 +38,7 @@ function env_prepare()
 		[ -e "$(pwd)/build/build_${linux_dev}.sh" ] && source "$(pwd)/build/build_${linux_dev}.sh"
 		echo "ok"
 		echo "Please run ./build.sh config next for ${linux_dev}."
+		exit 0
 	fi
 
 	### MAIN ###
