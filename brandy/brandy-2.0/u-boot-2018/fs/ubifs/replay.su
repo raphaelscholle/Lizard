@@ -1,0 +1,4 @@
+replay.c:269:12:replay_entries_cmp	0	static
+replay.c:349:12:insert_node	32	static
+replay.c:443:5:ubifs_validate_entry	40	static
+replay.c:1001:5:ubifs_replay_journal	144	static

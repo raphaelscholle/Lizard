@@ -1,0 +1,6 @@
+kernel/sound/soc/sunxi_v2/snd_soc_sunxi_component_rxsync.ko
+kernel/sound/soc/sunxi_v2/snd_soc_sunxi_pcm.ko
+kernel/sound/soc/sunxi_v2/snd_soc_sunxi_internal_codec.ko
+kernel/sound/soc/sunxi_v2/snd_soc_sunxi_aaudio.ko
+kernel/sound/soc/sunxi_v2/snd_soc_sunxi_daudio.ko
+kernel/sound/soc/sunxi_v2/snd_soc_sunxi_machine.ko

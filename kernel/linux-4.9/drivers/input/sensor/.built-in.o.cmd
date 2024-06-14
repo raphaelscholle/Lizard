@@ -1,0 +1,1 @@
+cmd_drivers/input/sensor/built-in.o :=  /home/book/tina-v853-open/out/toolchain/gcc-linaro-5.3.1-2016.05-x86_64_arm-linux-gnueabi/bin/arm-linux-gnueabi-ld -EL    -r -o drivers/input/sensor/built-in.o drivers/input/sensor/sunxi_gpadc.o drivers/input/sensor/bma253/built-in.o drivers/input/sensor/da380/built-in.o 

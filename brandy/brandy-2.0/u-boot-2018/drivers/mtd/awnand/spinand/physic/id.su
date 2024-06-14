@@ -1,0 +1,17 @@
+id.c:525:20:aw_spinand_info_model	0	static
+id.c:532:13:aw_spinand_info_nandid	8	static
+id.c:543:21:aw_spinand_info_sector_size	0	static
+id.c:548:21:aw_spinand_info_phy_page_size	0	static
+id.c:555:21:aw_spinand_info_page_size	8	static
+id.c:564:21:aw_spinand_info_phy_block_size	8	static
+id.c:571:21:aw_spinand_info_block_size	8	static
+id.c:578:21:aw_spinand_info_phy_oob_size	0	static
+id.c:585:21:aw_spinand_info_oob_size	0	static
+id.c:594:21:aw_spinand_info_die_cnt	0	static
+id.c:601:21:aw_spinand_info_total_size	8	static
+id.c:609:12:aw_spinand_info_operation_opt	0	static
+id.c:616:12:aw_spinand_info_max_erase_times	0	static
+id.c:653:12:spinand_get_chip_munufacture.isra.0	16	static
+id.c:704:20:aw_spinand_info_manufacture	32	static
+id.c:777:29:spinand_get_phy_info_from_fdt	72	static
+id.c:1113:5:aw_spinand_chip_detect	56	static

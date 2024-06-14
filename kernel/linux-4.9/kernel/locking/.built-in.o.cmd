@@ -1,0 +1,1 @@
+cmd_kernel/locking/built-in.o :=  /home/book/tina-v853-open/out/toolchain/gcc-linaro-5.3.1-2016.05-x86_64_arm-linux-gnueabi/bin/arm-linux-gnueabi-ld -EL    -r -o kernel/locking/built-in.o kernel/locking/mutex.o kernel/locking/semaphore.o kernel/locking/rwsem.o kernel/locking/percpu-rwsem.o kernel/locking/mutex-debug.o kernel/locking/rtmutex.o kernel/locking/rwsem-xadd.o 

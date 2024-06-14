@@ -1,0 +1,1 @@
+cmd_drivers/soc/sunxi/vf-test.ko := /home/book/tina-v853-open/out/toolchain/gcc-linaro-5.3.1-2016.05-x86_64_arm-linux-gnueabi/bin/arm-linux-gnueabi-ld -EL -r  -T ./scripts/module-common.lds --build-id  -o drivers/soc/sunxi/vf-test.ko drivers/soc/sunxi/vf-test.o drivers/soc/sunxi/vf-test.mod.o ;  true

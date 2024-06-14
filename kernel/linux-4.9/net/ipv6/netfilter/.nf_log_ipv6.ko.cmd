@@ -1,0 +1,1 @@
+cmd_net/ipv6/netfilter/nf_log_ipv6.ko := /home/book/tina-v853-open/out/toolchain/gcc-linaro-5.3.1-2016.05-x86_64_arm-linux-gnueabi/bin/arm-linux-gnueabi-ld -EL -r  -T ./scripts/module-common.lds --build-id  -o net/ipv6/netfilter/nf_log_ipv6.ko net/ipv6/netfilter/nf_log_ipv6.o net/ipv6/netfilter/nf_log_ipv6.mod.o ;  true

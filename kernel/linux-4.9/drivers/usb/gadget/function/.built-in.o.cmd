@@ -1,0 +1,1 @@
+cmd_drivers/usb/gadget/function/built-in.o :=  /home/book/tina-v853-open/out/toolchain/gcc-linaro-5.3.1-2016.05-x86_64_arm-linux-gnueabi/bin/arm-linux-gnueabi-ld -EL    -r -o drivers/usb/gadget/function/built-in.o drivers/usb/gadget/function/usb_f_mass_storage.o drivers/usb/gadget/function/usb_f_fs.o drivers/usb/gadget/function/usb_f_hid.o 

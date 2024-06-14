@@ -1,0 +1,4 @@
+sunxi_flashmap.c:182:5:sunxi_flashmap_init	32	static
+sunxi_flashmap.c:250:5:sunxi_flashmap_logical_offset	16	static
+sunxi_flashmap.c:257:5:sunxi_flashmap_offset	0	static
+sunxi_flashmap.c:262:5:sunxi_flashmap_size	0	static

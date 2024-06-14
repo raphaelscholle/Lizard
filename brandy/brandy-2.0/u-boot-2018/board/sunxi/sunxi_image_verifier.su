@@ -1,0 +1,10 @@
+sunxi_image_verifier.c:114:12:sunxi_certif_pubkey_check	1144	static
+sunxi_image_verifier.c:44:5:smc_tee_check_hash	8	static
+sunxi_image_verifier.c:223:12:sunxi_verify_embed_signature	264	static
+sunxi_image_verifier.c:50:5:sunxi_verify_os	192	static
+sunxi_image_verifier.c:311:5:sunxi_verify_preserve_toc1	16	static
+sunxi_image_verifier.c:332:5:sunxi_verify_get_rotpk_hash	168	static
+sunxi_image_verifier.c:363:5:sunxi_verify_toc1_root_cert	200	static
+sunxi_image_verifier.c:440:5:sunxi_verify_rotpk_hash	8	static
+sunxi_image_verifier.c:626:5:sunxi_verify_partion	184	static
+sunxi_image_verifier.c:732:5:sunxi_verify_mips	16	static

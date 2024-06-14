@@ -1,0 +1,4 @@
+kernel/drivers/media/platform/sunxi-vin/modules/sensor/gc2053_mipi.ko
+kernel/drivers/media/platform/sunxi-vin/modules/actuator/actuator.ko
+kernel/drivers/media/platform/sunxi-vin/vin_io.ko
+kernel/drivers/media/platform/sunxi-vin/vin_v4l2.ko

@@ -1,0 +1,1 @@
+cmd_sound/soc/sunxi_v2/snd_soc_sunxi_machine.o := /home/book/tina-v853-open/out/toolchain/gcc-linaro-5.3.1-2016.05-x86_64_arm-linux-gnueabi/bin/arm-linux-gnueabi-ld -EL    -r -o sound/soc/sunxi_v2/snd_soc_sunxi_machine.o sound/soc/sunxi_v2/snd_sunxi_mach.o sound/soc/sunxi_v2/snd_sunxi_mach_utils.o 

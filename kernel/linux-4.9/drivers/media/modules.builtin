@@ -1,0 +1,5 @@
+kernel/drivers/media/media.ko
+kernel/drivers/media/cedar-ve/sunxi-ve.ko
+kernel/drivers/media/cedar-vp9/google_vp9.ko
+kernel/drivers/media/v4l2-core/videodev.ko
+kernel/drivers/media/v4l2-core/v4l2-common.ko

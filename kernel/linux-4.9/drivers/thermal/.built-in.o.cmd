@@ -1,0 +1,1 @@
+cmd_drivers/thermal/built-in.o :=  /home/book/tina-v853-open/out/toolchain/gcc-linaro-5.3.1-2016.05-x86_64_arm-linux-gnueabi/bin/arm-linux-gnueabi-ld -EL    -r -o drivers/thermal/built-in.o drivers/thermal/thermal_sys.o drivers/thermal/samsung/built-in.o drivers/thermal/sunxi_thermal-ng.o drivers/thermal/sunxi_thermal/built-in.o 

@@ -1,0 +1,2 @@
+dev_manage.c:136:12:get_device_configs.constprop	376	static
+dev_manage.c:266:5:disp_devices_open	56	static

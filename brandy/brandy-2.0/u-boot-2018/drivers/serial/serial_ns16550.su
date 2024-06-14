@@ -1,0 +1,9 @@
+serial_ns16550.c:186:1:eserial1_init	8	static
+serial_ns16550.c:186:1:eserial1_setbrg	8	static
+serial_ns16550.c:186:1:eserial1_tstc	0	static
+serial_ns16550.c:186:1:eserial1_getc	8	static
+serial_ns16550.c:121:13:_serial_putc.constprop	8	static
+serial_ns16550.c:186:1:eserial1_puts	8	static
+serial_ns16550.c:186:1:eserial1_putc	0	static
+serial_ns16550.c:216:30:default_serial_console	0	static
+serial_ns16550.c:235:6:ns16550_serial_initialize	0	static

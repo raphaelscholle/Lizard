@@ -1,0 +1,8 @@
+board.o: arch/arm/boot/dts/board.dts arch/arm/boot/dts/sun8iw21p1.dtsi \
+ arch/arm/boot/dts/include/dt-bindings/interrupt-controller/arm-gic.h \
+ arch/arm/boot/dts/include/dt-bindings/interrupt-controller/irq.h \
+ arch/arm/boot/dts/include/dt-bindings/gpio/gpio.h \
+ arch/arm/boot/dts/sun8iw21p1-clk.dtsi \
+ arch/arm/boot/dts/sun8iw21p1-pinctrl.dtsi \
+ arch/arm/boot/dts/include/dt-bindings/thermal/thermal.h \
+ arch/arm/boot/dts/include/dt-bindings/power/v853-power.h

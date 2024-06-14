@@ -1,0 +1,4 @@
+kernel/drivers/char/dump_reg/dump_reg.ko
+kernel/drivers/char/sunxi-sysinfo/sysinfo.ko
+kernel/drivers/char/sunxi_g2d/g2d_sunxi.ko
+kernel/drivers/char/sunxi_nna_vip/vipcore.ko

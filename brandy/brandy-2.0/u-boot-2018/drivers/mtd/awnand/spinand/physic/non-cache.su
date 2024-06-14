@@ -1,0 +1,9 @@
+non-cache.c:169:13:aw_spinand_cache_match_cache	8	static
+non-cache.c:87:12:aw_spinand_cache_copy_from_cache	24	static
+non-cache.c:185:12:aw_spinand_cahce_write_to_cache_do.isra.1	32	static
+non-cache.c:20:13:update_cache_info	4	static
+non-cache.c:396:12:aw_spinand_cache_read_from_cache	48	static
+non-cache.c:45:12:aw_spinand_cache_copy_to_cache	24	static
+non-cache.c:326:12:aw_spinand_cache_write_to_cache	40	static
+non-cache.c:501:5:aw_spinand_chip_cache_init	16	static
+non-cache.c:548:6:aw_spinand_chip_cache_exit	16	static

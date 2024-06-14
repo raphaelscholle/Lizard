@@ -1,0 +1,4 @@
+bbt.c:17:12:aw_spinand_bbt_mark_badblock	12	static
+bbt.c:34:12:aw_spinand_bbt_is_badblock	8	static
+bbt.c:60:5:aw_spinand_chip_bbt_init	16	static
+bbt.c:75:6:aw_spinand_chip_bbt_exit	8	static

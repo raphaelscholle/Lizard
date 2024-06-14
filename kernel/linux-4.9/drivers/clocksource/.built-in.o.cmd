@@ -1,0 +1,1 @@
+cmd_drivers/clocksource/built-in.o :=  /home/book/tina-v853-open/out/toolchain/gcc-linaro-5.3.1-2016.05-x86_64_arm-linux-gnueabi/bin/arm-linux-gnueabi-ld -EL    -r -o drivers/clocksource/built-in.o drivers/clocksource/clksrc-probe.o drivers/clocksource/mmio.o drivers/clocksource/sun4i_timer.o drivers/clocksource/arm_arch_timer.o 

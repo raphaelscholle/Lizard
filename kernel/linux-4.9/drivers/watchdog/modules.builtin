@@ -1,0 +1,2 @@
+kernel/drivers/watchdog/sunxi_wdt.ko
+kernel/drivers/watchdog/axp2xx_wdt.ko

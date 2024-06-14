@@ -1,0 +1,1 @@
+cmd_drivers/soc/sunxi/arisc/built-in.o :=  /home/book/tina-v853-open/out/toolchain/gcc-linaro-5.3.1-2016.05-x86_64_arm-linux-gnueabi/bin/arm-linux-gnueabi-ld -EL    -r -o drivers/soc/sunxi/arisc/built-in.o drivers/soc/sunxi/arisc/scp-call.o drivers/soc/sunxi/arisc/interfaces/built-in.o drivers/soc/sunxi/arisc/arisc.o 

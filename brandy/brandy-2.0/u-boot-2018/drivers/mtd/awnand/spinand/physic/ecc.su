@@ -1,0 +1,6 @@
+ecc.c:157:12:aw_spinand_ecc_check_ecc	8	static
+ecc.c:53:12:__copy_from_oob.constprop	24	static
+ecc.c:71:12:aw_spinand_ecc_copy_from_oob	16	static
+ecc.c:11:12:__copy_to_oob.constprop	24	static
+ecc.c:32:12:aw_spinand_ecc_copy_to_oob	16	static
+ecc.c:197:5:aw_spinand_chip_ecc_init	0	static

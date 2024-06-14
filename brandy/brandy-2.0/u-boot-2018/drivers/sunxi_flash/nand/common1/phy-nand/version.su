@@ -1,0 +1,2 @@
+version.c:50:7:nand_get_nand_version	0	static
+version.c:63:5:nand_get_version	0	static

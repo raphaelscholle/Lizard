@@ -1,0 +1,13 @@
+disp_device.c:21:5:disp_device_set_manager	8	static
+disp_device.c:35:5:disp_device_swap_manager	8	static
+disp_device.c:64:5:disp_device_unset_manager	8	static
+disp_device.c:78:5:disp_device_get_resolution	8	static
+disp_device.c:91:5:disp_device_get_timings	8	static
+disp_device.c:104:5:disp_device_is_interlace	8	static
+disp_device.c:114:6:disp_device_is_in_safe_period	16	static
+disp_device.c:135:21:disp_device_get	12	static
+disp_device.c:149:21:disp_device_find	12	static
+disp_device.c:162:19:disp_device_get_list_head	0	static
+disp_device.c:168:5:disp_device_register	0	static
+disp_device.c:174:5:disp_device_unregister	0	static
+disp_device.c:180:6:disp_device_show_builtin_patten	0	static

@@ -1,0 +1,10 @@
+sprite_download.c:49:13:dump_dram_para.constprop	16	static
+sprite_download.c:151:5:sunxi_sprite_download_uboot	16	static
+sprite_download.c:203:5:download_secure_boot0	24	static
+sprite_download.c:313:5:download_normal_boot0	24	static
+sprite_download.c:396:5:sunxi_sprite_download_boot0	8	static
+sprite_download.c:409:6:sunxi_get_logical_offset_param	16	static
+sprite_download.c:436:5:gpt_convert_to_sunxi_mbr	88	static
+sprite_download.c:553:5:sunxi_mbr_convert_to_gpt	112	static
+sprite_download.c:692:5:download_standard_gpt	24	static
+sprite_download.c:112:5:sunxi_sprite_download_mbr	16	static

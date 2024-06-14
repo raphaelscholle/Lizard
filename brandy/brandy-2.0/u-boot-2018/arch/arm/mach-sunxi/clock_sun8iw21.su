@@ -1,0 +1,12 @@
+clock_sun8iw21.c:15:6:rtc_set_vccio_det_spare	0	static
+clock_sun8iw21.c:25:6:clock_init_uart	8	static
+clock_sun8iw21.c:80:6:clock_get_pll6	8	static
+clock_sun8iw21.c:48:6:clock_get_pll_ddr	8	static
+clock_sun8iw21.c:99:6:clock_get_corepll	8	static
+clock_sun8iw21.c:136:6:clock_get_axi	8	static
+clock_sun8iw21.c:152:6:clock_get_ahb	16	static
+clock_sun8iw21.c:189:6:clock_get_apb1	16	static
+clock_sun8iw21.c:224:6:clock_get_mbus	8	static
+clock_sun8iw21.c:256:5:clock_set_corepll	16	static
+clock_sun8iw21.c:329:5:usb_open_clock	8	static
+clock_sun8iw21.c:372:5:usb_close_clock	8	static

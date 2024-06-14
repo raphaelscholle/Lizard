@@ -1,0 +1,1 @@
+cmd_net/ipv4/netfilter/nf_log_ipv4.ko := /home/book/tina-v853-open/out/toolchain/gcc-linaro-5.3.1-2016.05-x86_64_arm-linux-gnueabi/bin/arm-linux-gnueabi-ld -EL -r  -T ./scripts/module-common.lds --build-id  -o net/ipv4/netfilter/nf_log_ipv4.ko net/ipv4/netfilter/nf_log_ipv4.o net/ipv4/netfilter/nf_log_ipv4.mod.o ;  true

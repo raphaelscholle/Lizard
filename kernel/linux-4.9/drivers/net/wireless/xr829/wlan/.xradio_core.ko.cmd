@@ -1,0 +1,1 @@
+cmd_drivers/net/wireless/xr829/wlan/xradio_core.ko := /home/book/tina-v853-open/out/toolchain/gcc-linaro-5.3.1-2016.05-x86_64_arm-linux-gnueabi/bin/arm-linux-gnueabi-ld -EL -r  -T ./scripts/module-common.lds --build-id  -o drivers/net/wireless/xr829/wlan/xradio_core.ko drivers/net/wireless/xr829/wlan/xradio_core.o drivers/net/wireless/xr829/wlan/xradio_core.mod.o ;  true

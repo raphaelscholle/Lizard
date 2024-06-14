@@ -1,0 +1,2 @@
+core.c:185:5:aw_spinand_chip_init	40	static
+core.c:213:6:aw_spinand_chip_exit	8	static

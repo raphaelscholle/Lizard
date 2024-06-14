@@ -1,0 +1,1 @@
+cmd_drivers/clk/sunxi/built-in.o :=  /home/book/tina-v853-open/out/toolchain/gcc-linaro-5.3.1-2016.05-x86_64_arm-linux-gnueabi/bin/arm-linux-gnueabi-ld -EL    -r -o drivers/clk/sunxi/built-in.o drivers/clk/sunxi/clk-sunxi.o drivers/clk/sunxi/clk-factors.o drivers/clk/sunxi/clk-periph.o drivers/clk/sunxi/clk-cpu.o drivers/clk/sunxi/clk-sun8iw21.o 

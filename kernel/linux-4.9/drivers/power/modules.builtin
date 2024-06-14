@@ -1,0 +1,2 @@
+kernel/drivers/power/supply/axp2101_charger.ko
+kernel/drivers/power/supply/gpio-charger.ko

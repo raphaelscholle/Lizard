@@ -1,0 +1,1 @@
+cmd_net/netfilter/xt_limit.ko := /home/book/tina-v853-open/out/toolchain/gcc-linaro-5.3.1-2016.05-x86_64_arm-linux-gnueabi/bin/arm-linux-gnueabi-ld -EL -r  -T ./scripts/module-common.lds --build-id  -o net/netfilter/xt_limit.ko net/netfilter/xt_limit.o net/netfilter/xt_limit.mod.o ;  true

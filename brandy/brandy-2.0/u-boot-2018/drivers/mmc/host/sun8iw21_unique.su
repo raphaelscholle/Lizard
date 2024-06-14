@@ -1,0 +1,3 @@
+sun8iw21_unique.c:54:13:sunxi_mmc_update_src_clk	24	static
+sun8iw21_unique.c:69:5:sunxi_mmc_get_src_clk_no	24	static
+sun8iw21_unique.c:93:5:sunxi_host_src_clk	16	static

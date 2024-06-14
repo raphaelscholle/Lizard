@@ -1,0 +1,16 @@
+rawnand_ids.c:1819:5:generic_is_lsb_page	0	static
+rawnand_ids.c:1852:5:hynix16nm_is_lsb_page	0	static
+rawnand_ids.c:1869:5:toshiba_is_lsb_page	0	static
+rawnand_ids.c:1883:5:samsung_is_lsb_page	0	static
+rawnand_ids.c:1896:5:sandisk_is_lsb_page	0	static
+rawnand_ids.c:1923:5:micron_0x41_is_lsb_page	0	static
+rawnand_ids.c:1962:5:micron_0x44_is_lsb_page	0	static
+rawnand_ids.c:1824:5:hynix20nm_is_lsb_page	0	static
+rawnand_ids.c:1937:5:micron_0x42_is_lsb_page	0	static
+rawnand_ids.c:1951:5:micron_0x43_is_lsb_page	0	static
+rawnand_ids.c:1910:5:micron_0x40_is_lsb_page	0	static
+rawnand_ids.c:1697:33:sunxi_search_idtab_by_id	40	static
+rawnand_ids.c:1737:33:sunxi_search_idtab_by_name	48	static
+rawnand_ids.c:1764:33:sunxi_search_id	24	static
+rawnand_ids.c:1838:5:hynix26nm_is_lsb_page	0	static
+rawnand_ids.c:1973:12:chose_lsb_func	0	static

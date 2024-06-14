@@ -1,0 +1,2 @@
+sunxi_dma.c:8:14:sunxi_dma_isr	0	static
+sunxi_dma.c:13:12:do_sunxi_dma_test	40	static

@@ -1,0 +1,1 @@
+cmd_drivers/soc/sunxi/built-in.o :=  /home/book/tina-v853-open/out/toolchain/gcc-linaro-5.3.1-2016.05-x86_64_arm-linux-gnueabi/bin/arm-linux-gnueabi-ld -EL    -r -o drivers/soc/sunxi/built-in.o drivers/soc/sunxi/sunxi-sid.o drivers/soc/sunxi/arisc/built-in.o drivers/soc/sunxi/sunxi-dump.o drivers/soc/sunxi/vf-table.o drivers/soc/sunxi/pm_domains.o 

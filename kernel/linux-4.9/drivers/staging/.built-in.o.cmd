@@ -1,0 +1,1 @@
+cmd_drivers/staging/built-in.o :=  /home/book/tina-v853-open/out/toolchain/gcc-linaro-5.3.1-2016.05-x86_64_arm-linux-gnueabi/bin/arm-linux-gnueabi-ld -EL    -r -o drivers/staging/built-in.o drivers/staging/media/built-in.o drivers/staging/android/built-in.o drivers/staging/nanohub/built-in.o 

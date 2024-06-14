@@ -1,0 +1,1 @@
+cmd_drivers/usb/storage/ums-jumpshot.o := /home/book/tina-v853-open/out/toolchain/gcc-linaro-5.3.1-2016.05-x86_64_arm-linux-gnueabi/bin/arm-linux-gnueabi-ld -EL    -r -o drivers/usb/storage/ums-jumpshot.o drivers/usb/storage/jumpshot.o 

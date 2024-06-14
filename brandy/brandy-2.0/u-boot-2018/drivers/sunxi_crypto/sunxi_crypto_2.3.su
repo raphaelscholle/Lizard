@@ -1,0 +1,17 @@
+sunxi_crypto_2.3.c:52:13:word_padding	16	static
+sunxi_crypto_2.3.c:42:13:__rsa_padding	24	static
+sunxi_crypto_2.3.c:65:6:sunxi_ss_open	0	static
+sunxi_crypto_2.3.c:70:6:sunxi_ss_close	0	static
+sunxi_crypto_2.3.c:75:5:sunxi_md5_calc	488	static
+sunxi_crypto_2.3.c:123:5:sunxi_hash_test	488	static
+sunxi_crypto_2.3.c:167:5:sunxi_sha_calc	488	static
+sunxi_crypto_2.3.c:211:5:sm2_crypto_gen_cxy_kxy	408	dynamic
+sunxi_crypto_2.3.c:369:5:sm2_ecdh_gen_key_rx_ry	520	dynamic
+sunxi_crypto_2.3.c:534:5:sm2_ecdh_gen_ux_uy	424	dynamic
+sunxi_crypto_2.3.c:682:5:sunxi_sm2_sign_verify_test	984	dynamic
+sunxi_crypto_2.3.c:882:5:sunxi_normal_rsa	1904	dynamic,bounded
+sunxi_crypto_2.3.c:945:5:sunxi_rsa_calc	1904	dynamic,bounded
+sunxi_crypto_2.3.c:1012:5:sunxi_aes_with_hardware	504	static
+sunxi_crypto_2.3.c:1066:5:sunxi_trng_gen	472	static
+sunxi_crypto_2.3.c:1104:5:sunxi_create_rssk	0	static
+sunxi_crypto_2.3.c:1109:5:sunxi_do_aes_crypt	24	static

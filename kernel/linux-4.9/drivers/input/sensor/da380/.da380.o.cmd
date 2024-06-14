@@ -1,0 +1,1 @@
+cmd_drivers/input/sensor/da380/da380.o := /home/book/tina-v853-open/out/toolchain/gcc-linaro-5.3.1-2016.05-x86_64_arm-linux-gnueabi/bin/arm-linux-gnueabi-ld -EL    -r -o drivers/input/sensor/da380/da380.o drivers/input/sensor/da380/mir3da_core.o drivers/input/sensor/da380/mir3da_cust.o 

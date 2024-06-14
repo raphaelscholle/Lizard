@@ -1,0 +1,2 @@
+kernel/drivers/input/misc/axp2101-pek.ko
+kernel/drivers/input/misc/sunxi-wiegand/sunxi-wiegand.ko

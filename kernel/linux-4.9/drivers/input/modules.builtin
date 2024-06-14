@@ -1,0 +1,9 @@
+kernel/drivers/input/input-core.ko
+kernel/drivers/input/input-polldev.ko
+kernel/drivers/input/evdev.ko
+kernel/drivers/input/init-input.ko
+kernel/drivers/input/misc/axp2101-pek.ko
+kernel/drivers/input/misc/sunxi-wiegand/sunxi-wiegand.ko
+kernel/drivers/input/sensor/sunxi_gpadc.ko
+kernel/drivers/input/touchscreen/goodix.ko
+kernel/drivers/input/touchscreen/gslx680new/gslX680new.ko

@@ -1,0 +1,1 @@
+cmd_net/netfilter/nf_nat.o := /home/book/tina-v853-open/out/toolchain/gcc-linaro-5.3.1-2016.05-x86_64_arm-linux-gnueabi/bin/arm-linux-gnueabi-ld -EL    -r -o net/netfilter/nf_nat.o net/netfilter/nf_nat_core.o net/netfilter/nf_nat_proto_unknown.o net/netfilter/nf_nat_proto_common.o net/netfilter/nf_nat_proto_udp.o net/netfilter/nf_nat_proto_tcp.o net/netfilter/nf_nat_helper.o 

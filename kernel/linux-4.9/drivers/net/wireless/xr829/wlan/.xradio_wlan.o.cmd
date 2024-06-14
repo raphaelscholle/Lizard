@@ -1,0 +1,1 @@
+cmd_drivers/net/wireless/xr829/wlan/xradio_wlan.o := /home/book/tina-v853-open/out/toolchain/gcc-linaro-5.3.1-2016.05-x86_64_arm-linux-gnueabi/bin/arm-linux-gnueabi-ld -EL   --strip-debug  -r -o drivers/net/wireless/xr829/wlan/xradio_wlan.o drivers/net/wireless/xr829/wlan/wlan_init.o 

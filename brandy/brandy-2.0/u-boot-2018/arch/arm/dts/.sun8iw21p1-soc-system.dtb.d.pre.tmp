@@ -1,0 +1,9 @@
+.sun8iw21p1-soc-system.dtb.pre.o: \
+ arch/arm/dts/.sun8iw21p1-soc-system.dtb.pre.tmp include/linux/kconfig.h \
+ include/generated/autoconf.h \
+ arch/arm/dts/include/dt-bindings/interrupt-controller/arm-gic.h \
+ arch/arm/dts/include/dt-bindings/interrupt-controller/irq.h \
+ arch/arm/dts/include/dt-bindings/gpio/gpio.h \
+ arch/arm/dts/sun8iw21p1-clk.dtsi \
+ arch/arm/dts/include/dt-bindings/thermal/thermal.h \
+ arch/arm/dts/.board-uboot.dts

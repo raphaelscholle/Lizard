@@ -1,0 +1,11 @@
+pmu_axp2101.c:353:15:pmu_axp2101_get_reg_value	16	static
+pmu_axp2101.c:302:12:pmu_axp2101_get_sys_mode	16	static
+pmu_axp2101.c:311:12:pmu_axp2101_get_key_irq	16	static
+pmu_axp2101.c:293:12:pmu_axp2101_set_sys_mode	8	static
+pmu_axp2101.c:280:12:pmu_axp2101_set_power_off	16	static
+pmu_axp2101.c:79:25:get_ctrl_info_from_tbl	24	static
+pmu_axp2101.c:223:12:pmu_axp2101_get_voltage	48	static
+pmu_axp2101.c:140:12:pmu_axp2101_set_voltage	56	static
+pmu_axp2101.c:327:5:pmu_axp2101_set_bus_vol_limit	16	static
+pmu_axp2101.c:362:15:pmu_axp2101_set_reg_value	16	static
+pmu_axp2101.c:113:12:pmu_axp2101_probe	16	static

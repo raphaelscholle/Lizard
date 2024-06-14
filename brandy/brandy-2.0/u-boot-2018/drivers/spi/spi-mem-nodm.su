@@ -1,0 +1,2 @@
+spi-mem-nodm.c:148:5:spi_mem_exec_op	48	static
+spi-mem-nodm.c:231:5:spi_mem_adjust_op_size	8	static

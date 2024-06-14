@@ -1,0 +1,6 @@
+secure-storage.c:91:12:read_check_secure_storage_page	80	static
+secure-storage.c:196:12:repair_secure_storage	24	static
+secure-storage.c:25:12:is_secure_storage_block.constprop	64	static
+secure-storage.c:218:12:init_secure_storage.isra.0	104	static
+secure-storage.c:260:5:aw_spinand_secure_storage_read	64	static
+secure-storage.c:320:5:aw_spinand_secure_storage_write	112	static
