@@ -38,7 +38,8 @@ jobs:
           7z x BIGFILES.7z -oLizard -bb1
           cd Lizard
           sudo apt-get install -y  libncurses5-dev   u-boot-tools
-          source build/envsetup.sh 
+          source build/envsetup.sh
+          echo "testing__________________________" 
           lunch
 
 
