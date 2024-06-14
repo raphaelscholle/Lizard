@@ -38,15 +38,14 @@ function env_prepare()
 		[ -e "$(pwd)/build/build_${linux_dev}.sh" ] && source "$(pwd)/build/build_${linux_dev}.sh"
 		echo "ok"
 		echo "Please run ./build.sh config next for ${linux_dev}."
-		exit 0
 	fi
 
 	### MAIN ###
 	[ -e "$(pwd)/build/buildbase.sh" ] && source "$(pwd)/build/buildbase.sh"
-	[ -e "$(pwd)/build/quick.sh" ] && source $(pwd)/build/quick.sh
+	#[ -e "$(pwd)/build/quick.sh" ] && source $(pwd)/build/quick.sh
 
 	# use hooks
-	[ -e "$(pwd)/build/.hooks/envsetup.hook" ] && source $(pwd)/build/.hooks/envsetup.hook
+	#[ -e "$(pwd)/build/.hooks/envsetup.hook" ] && source $(pwd)/build/.hooks/envsetup.hook
 }
 
 ### MAIN ###
